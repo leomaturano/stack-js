@@ -1,0 +1,101 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.trimTrailingWhitespace": false
+  },
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "breadcrumbs.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.detectIndentation": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.lineHeight": 24,
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.parameterHints.enabled": true,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.renderLineHighlight": "gutter",
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "comments": "#FcF"
+  },
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "eslint.autoFixOnSave": true,
+  "explorer.sortOrder": "type",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/*.asset-cache": true,
+    "**/*.cache": true,
+    "**/*.coverage": true,
+    "**/*.egg-info": true,
+    "**/*.jekyll-cache": true,
+    "**/*.pyc": true,
+    "**/*.tweet-cache": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.pytest_cache": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/__pycache__": true,
+    "**/_site": true,
+    "**/bower_components": true,
+    "**/celerybeat-schedule": true,
+    "**/node_modules": true,
+    "**/tmp": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "html.format.endWithNewline": true,
+  "javascript.format.enable": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "php.validate.executablePath": "c:/php/php.exe",
+  "prettier.eslintIntegration": true,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Dracula",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "welcomePage"
+}
