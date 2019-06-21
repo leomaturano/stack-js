@@ -1,0 +1,9 @@
+<h1>Testar idade da pessoa</h1>
+<form action="/check" method="POST">
+  <input name="age" />
+  <button type="submit">Verificar</button>
+</form>
+<br>
+{% if message %}
+  <p>{{message}}</p>
+{% endif %}
