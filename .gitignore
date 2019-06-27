@@ -86,3 +86,9 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+yarn.lock
+npm.lock
+modulo02/aula16/tmp/
+
+
