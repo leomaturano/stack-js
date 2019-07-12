@@ -2,6 +2,7 @@ const express = require('express')
 const UserController = require('./app/controllers/UserController')
 const SessionController = require('./app/controllers/SessionController')
 
+// Multer trata arquivos enviados pelo formulário html
 const multerConfig = require('./config/multer')
 const upload = require('multer')(multerConfig)
 
