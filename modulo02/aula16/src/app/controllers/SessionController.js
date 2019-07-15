@@ -7,10 +7,12 @@ class SessionController {
     const { email, password } = req.body
     const user = await User.findOne({ where: { email } })
     if (!user) {
+      req.flash('error', 'Usuário não cadastrado')
       console.log('Usuário não encontrado')
       return res.redirect('/')
     }
     if (!(await user.checkPassword(password))) {
+      req.flash('error', 'Senha inválida')
       console.log('Senha incorreta')
       return res.redirect('/')
     }
@@ -18,6 +20,12 @@ class SessionController {
     req.session.user = user
 
     return res.redirect('/app/dashboard')
+  }
+  destroy (req, res) {
+    req.session.destroy(() => {
+      res.clearCookie('root')
+      return res.redirect('/')
+    })
   }
 }
 
