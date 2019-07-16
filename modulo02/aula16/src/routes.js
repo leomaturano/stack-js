@@ -3,6 +3,7 @@ const UserController = require('./app/controllers/UserController')
 const SessionController = require('./app/controllers/SessionController')
 const DashboardController = require('./app/controllers/DashboardController')
 const FileController = require('./app/controllers/FileController')
+const AppointmentController = require('./app/controllers/AppointmentController')
 
 const authMiddleware = require('./app/middlewares/auth')
 const guestMiddleware = require('./app/middlewares/guest')
@@ -28,9 +29,8 @@ routes.get('/signup', guestMiddleware, UserController.create)
 routes.post('/signup', upload.single('avatar'), UserController.store)
 
 routes.use('/app', authMiddleware)
-
 routes.get('/app/logout', SessionController.destroy)
-
 routes.get('/app/dashboard', DashboardController.index)
+routes.get('/app/appointments/new/:provider', AppointmentController.create)
 
 module.exports = routes
