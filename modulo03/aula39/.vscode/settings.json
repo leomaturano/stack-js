@@ -1,0 +1,13 @@
+{
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "eslint.autoFixOnSave": true,
+  "files.eol": "\n",
+  "prettier.eslintIntegration": true
+}
