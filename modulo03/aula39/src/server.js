@@ -1,30 +1,33 @@
-const express = require('express')
-const path = require('path')
+const express = require('express');
+const mongoose = require('mongoose');
+const path = require('path');
+const { uriMongo } = require('./config/database');
+const appRoutes = require('./routes');
 
 class App {
-  constructor () {
-    this.express = express()
-    this.isDev = process.env.NODE_ENV !== 'production'
+    constructor() {
+        this.express = express();
+        this.isDev = process.env.NODE_ENV !== 'production';
 
-    this.database()
-    this.middlewares()
-    this.routes()
-  }
+        this.database();
+        this.middlewares();
+        this.routes();
+    }
 
-  database () {
-    mongoose.connect(require('./config/database').uriDocker, {
-      useCreateIndex: true,
-      useNewUrlParser: true
-    })
-  }
+    // eslint-disable-next-line class-methods-use-this
+    database() {
+        mongoose.connect(uriMongo, {
+            useCreateIndex: true,
+            useNewUrlParser: true,
+        });
+    }
 
-  middlewares () {
-    //    this.express.use(express.urlencoded({ extended: true }))
-    this.express.use(express.json())
-  }
+    middlewares() {
+        this.express.use(express.json());
+    }
 
-  routes () {
-    this.express.use(require('./routes'))
-  }
+    routes() {
+        this.express.use(appRoutes);
+    }
 }
-module.exports = new App().express
+module.exports = new App().express;

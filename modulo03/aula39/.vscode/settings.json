@@ -1,13 +1,19 @@
 {
-  "editor.rulers": [80, 120],
-  "editor.tabSize": 2,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx"
-  },
-  "eslint.autoFixOnSave": true,
-  "files.eol": "\n",
-  "prettier.eslintIntegration": true
+    "breadcrumbs.enabled": true,
+    "editor.fontLigatures": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveTimeout": 5000,
+    "editor.renderLineHighlight": "all",
+    "editor.rulers": [120, 140],
+    "editor.tabSize": 4,
+    "eslint.autoFixOnSave": true,
+    "eslint.enable": true,
+    "files.eol": "\n",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "prettier.endOfLine": "lf",
+    "prettier.printWidth": 120,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "terminal.integrated.fontSize": 14,
+    "workbench.tree.indent": 24,    
 }
